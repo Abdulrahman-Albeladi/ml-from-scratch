@@ -81,3 +81,25 @@ These directories retain original filenames, metadata files, partner files where
 ## Contributing and security
 
 See `CONTRIBUTING.md` for contribution guidance and `SECURITY.md` for security reporting information. Review `LICENSE_REVIEW.md` before redistributing recovered materials or adding third-party content.
+
+<!-- portfolio-public-release-license:start -->
+
+## License and public-release status
+
+This repository is published under an all-rights-reserved
+portfolio license. Viewing the repository does not grant permission to reuse its code,
+documentation, datasets, or assets. Third-party and collaborator materials retain
+their original rights.
+
+Before changing visibility from private to public, the owner must complete the
+ownership checklist in `LICENSE_REVIEW.md`.
+
+<!-- portfolio-public-release-license:end -->
+
+<!-- release-license:start -->
+
+## License and public-release status
+
+This repository uses an all-rights-reserved portfolio license. Review `LICENSE_REVIEW.md` and `THIRD_PARTY_NOTICES.md` before changing visibility to public.
+
+<!-- release-license:end -->

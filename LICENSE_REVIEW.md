@@ -1,20 +1,8 @@
-# License review required
+# License and ownership review
 
-A license is not added automatically for this repository.
+This repository uses an all-rights-reserved portfolio license. It is not open source.
 
-## Reason
-
-The repository is described as an independent reconstruction of coursework themes, and the release blockers explicitly warn against publishing raw course submissions or course-derived artifacts. Until ownership and provenance are fully reviewed, adding an open-source license could misrepresent publication rights.
-
-## Review checklist
-
-Before adding a license, confirm that:
-
-- all published code was written independently or is otherwise publishable
-- no starter code with incompatible or unclear terms remains
-- no collaborator ownership needs to be credited or approved
-- no course-specific materials are included
-
-## After review
-
-If provenance is clean and ownership is settled, add the chosen license in a separate change.
+Before making the repository public, confirm redistribution rights for every retained
+file, including course scaffolding, starter code, collaborator contributions,
+datasets, images, and other assets. Remove or replace anything whose ownership or
+redistribution terms are uncertain.
