@@ -3,7 +3,6 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 import numpy as np
-from scipy.optimize import minimize
 
 ArrayLike = np.ndarray
 
@@ -97,12 +96,26 @@ class SoftmaxRegression:
         return float(loss), gradient.ravel()
 
     def fit(self, X: ArrayLike, y: ArrayLike) -> "SoftmaxRegression":
+        """Fit the model to X, y.
+
+        SciPy is used for the optimizer if available. The import is performed
+        lazily so that merely importing this module does not require SciPy to be
+        installed (tests that only import modules will succeed).
+        """
         X, y = self._validate_inputs(X, y)
         X_design = self._add_intercept(X)
         _, n_features = X_design.shape
 
         rng = np.random.default_rng(self.random_state)
         initial = rng.normal(loc=0.0, scale=1e-3, size=self.n_classes * n_features)
+
+        try:
+            # Import lazily to avoid an import-time dependency on SciPy.
+            from scipy.optimize import minimize
+        except Exception as exc:  # pragma: no cover - defensive import handling
+            raise ImportError(
+                "scipy is required to fit SoftmaxRegression. Install scipy to use fit()."
+            ) from exc
 
         result = minimize(
             fun=self._loss_and_gradient,
