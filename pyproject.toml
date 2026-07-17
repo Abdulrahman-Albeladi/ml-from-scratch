@@ -10,7 +10,6 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.24",
-  "scipy",
 ]
 
 [project.optional-dependencies]
@@ -30,10 +29,6 @@ where = ["src"]
 [tool.black]
 line-length = 88
 target-version = ["py310"]
-# Exclude the tools directory from automatic formatting checks. The tools/ script
-# is a compact, single-file utility that intentionally uses condensed layout and
-# platform-invoking logic that development tooling scans separately.
-exclude = '/(notebooks|\\.git|\\.venv|venv|build|dist|tools)/'
 
 [tool.ruff]
 line-length = 88
