@@ -66,7 +66,6 @@ Use only data that may be lawfully processed and shared. Do not commit private c
 - Public APIs, numerical behavior, input validation, performance characteristics, and supported edge cases should be verified against the source before use.
 - The available test file is import-oriented; algorithmic correctness, numerical stability, shape handling, reproducibility, and performance are not established by the file list alone.
 - Recovered PDFs and metadata remain in the provenance directories and may contain historical context that is not part of the maintained API.
-- `.ruff_cache/` is a generated tool cache and should not be treated as project source or validation evidence.
 
 ## Provenance
 
@@ -82,24 +81,19 @@ These directories retain original filenames, metadata files, partner files where
 
 See `CONTRIBUTING.md` for contribution guidance and `SECURITY.md` for security reporting information. Review `LICENSE_REVIEW.md` before redistributing recovered materials or adding third-party content.
 
-<!-- portfolio-public-release-license:start -->
+## Current repository layout
 
-## License and public-release status
+- `.github/` — 1 files
+- `docs/` — 1 files
+- `projects/` — 13 files
+- `src/` — 10 files
+- `tests/` — 1 files
 
-This repository is published under an all-rights-reserved
-portfolio license. Viewing the repository does not grant permission to reuse its code,
-documentation, datasets, or assets. Third-party and collaborator materials retain
-their original rights.
+## Public-release status
 
-Before changing visibility from private to public, the owner must complete the
-ownership checklist in `LICENSE_REVIEW.md`.
+**READY FOR FINAL MANUAL PUBLIC-RELEASE CHECK**
 
-<!-- portfolio-public-release-license:end -->
+Automated security and documentation checks pass. Complete the ownership checklist and verify build or test claims before changing visibility.
 
-<!-- release-license:start -->
-
-## License and public-release status
-
-This repository uses an all-rights-reserved portfolio license. Review `LICENSE_REVIEW.md` and `THIRD_PARTY_NOTICES.md` before changing visibility to public.
-
-<!-- release-license:end -->
+This repository uses an all-rights-reserved portfolio license. Review `LICENSE`,
+`LICENSE_REVIEW.md`, `THIRD_PARTY_NOTICES.md`, and `OWNERSHIP_REVIEW.md`.
