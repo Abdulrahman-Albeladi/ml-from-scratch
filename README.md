@@ -22,16 +22,16 @@ The implementations cover baseline classifiers, decision trees, nearest-neighbor
 
 | Area | Consolidated module | Recovered source material |
 | --- | --- | --- |
-| Baseline classifiers | `src/classifiers/baselines.py` | `projects/257086855/dumbClassifiers.py` |
-| Decision tree | `src/classifiers/decision_tree.py` | `projects/257086855/dt.py` |
-| k-nearest neighbors | `src/classifiers/knn.py` | `projects/257086855/knn.py` |
-| Perceptron | `src/linear_models/perceptron.py` | `projects/257086855/perceptron.py` |
-| Gradient descent | `src/optimization/gradient_descent.py` | `projects/258095197/gd.py` |
-| Linear classifiers | `src/linear_models/linear_classifiers.py` | `projects/258095197/linear.py` |
-| Multiclass classification | `src/classifiers/multiclass.py` | `projects/258095197/multiclass.py` |
-| PCA / dimensionality reduction | `src/decomposition/pca.py` | `projects/258674342/dr.py` |
-| Multilayer perceptron | `src/neural_nets/mlp.py` | `projects/258674342/nn.py` |
-| Softmax regression | `src/linear_models/softmax_regression.py` | `projects/258674342/softmax.py` |
+| Baseline classifiers | `src/classifiers/baselines.py` | `projects/binary-classifiers/dumbClassifiers.py` |
+| Decision tree | `src/classifiers/decision_tree.py` | `projects/binary-classifiers/dt.py` |
+| k-nearest neighbors | `src/classifiers/knn.py` | `projects/binary-classifiers/knn.py` |
+| Perceptron | `src/linear_models/perceptron.py` | `projects/binary-classifiers/perceptron.py` |
+| Gradient descent | `src/optimization/gradient_descent.py` | `projects/linear-and-multiclass-models/gd.py` |
+| Linear classifiers | `src/linear_models/linear_classifiers.py` | `projects/linear-and-multiclass-models/linear.py` |
+| Multiclass classification | `src/classifiers/multiclass.py` | `projects/linear-and-multiclass-models/multiclass.py` |
+| PCA / dimensionality reduction | `src/decomposition/pca.py` | `projects/pca-and-neural-networks/dr.py` |
+| Multilayer perceptron | `src/neural_nets/mlp.py` | `projects/pca-and-neural-networks/nn.py` |
+| Softmax regression | `src/linear_models/softmax_regression.py` | `projects/pca-and-neural-networks/softmax.py` |
 
 ## Setup
 
@@ -47,12 +47,6 @@ python -m pip install -e .
 ```
 
 If the project defines optional development dependencies or tool environments, install them according to `pyproject.toml` before running linting or tests.
-
-## Validation status
-
-The repository includes `tests/test_imports.py`, which indicates import-level validation is intended. No supplied test output, CI result, coverage report, benchmark result, or training evaluation result is available here. This README therefore does not claim that tests, linting, or workflows currently pass.
-
-Recommended validation commands are listed in the project index and should be run in a configured local environment.
 
 ## Data and privacy
 
@@ -71,9 +65,9 @@ Use only data that may be lawfully processed and shared. Do not commit private c
 
 The repository consolidates publish-eligible material recovered from three historical project directories:
 
-- `projects/257086855/`
-- `projects/258095197/`
-- `projects/258674342/`
+- `projects/binary-classifiers/`
+- `projects/linear-and-multiclass-models/`
+- `projects/pca-and-neural-networks/`
 
 These directories retain original filenames, metadata files, partner files where present, and writeups where present. The modules under `src/` provide the repository-facing organization of the recovered implementation topics. Historical artifacts are retained for attribution and traceability; they should not be interpreted as current documentation, test evidence, or a guarantee that every recovered artifact is suitable for redistribution outside its original context.
 
@@ -81,19 +75,12 @@ These directories retain original filenames, metadata files, partner files where
 
 See `CONTRIBUTING.md` for contribution guidance and `SECURITY.md` for security reporting information. Review `LICENSE_REVIEW.md` before redistributing recovered materials or adding third-party content.
 
-## Current repository layout
+<!-- internal-projects:start -->
+## Projects
 
-- `.github/` — 1 files
-- `docs/` — 1 files
-- `projects/` — 13 files
-- `src/` — 10 files
-- `tests/` — 1 files
-
-## Public-release status
-
-**READY FOR FINAL MANUAL PUBLIC-RELEASE CHECK**
-
-Automated security and documentation checks pass. Complete the ownership checklist and verify build or test claims before changing visibility.
-
-This repository uses an all-rights-reserved portfolio license. Review `LICENSE`,
-`LICENSE_REVIEW.md`, `THIRD_PARTY_NOTICES.md`, and `OWNERSHIP_REVIEW.md`.
+| Project | Location |
+|---|---|
+| Binary Classifiers | `projects/binary-classifiers` |
+| Linear and Multiclass Models | `projects/linear-and-multiclass-models` |
+| PCA and Neural Networks | `projects/pca-and-neural-networks` |
+<!-- internal-projects:end -->
