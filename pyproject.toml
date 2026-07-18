@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ml-from-scratch"
 version = "0.1.0"
-description = "Independent machine-learning-from-scratch implementations for study and portfolio review."
+description = "Machine-learning algorithms implemented from first principles using Python and NumPy."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
