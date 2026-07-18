@@ -1,4 +1,4 @@
-# ml-from-scratch
+# ML From Scratch
 
 A collection of educational machine-learning implementations recovered from course and research materials and organized as a Python repository. The repository contains maintained source modules under `src/` and preserved recovered project artifacts under `projects/`.
 
