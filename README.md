@@ -1,10 +1,5 @@
 # ML From Scratch
 
-<!-- employer-visual:start -->
-<p align="center">
-  <img src="docs/portfolio-overview.png" alt="ML From Scratch project overview" width="100%">
-</p>
-<!-- employer-visual:end -->
 
 Machine-learning algorithms implemented from first principles in Python/NumPy with a clean, reusable package layout.
 
